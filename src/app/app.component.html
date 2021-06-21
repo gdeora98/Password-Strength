@@ -1,0 +1,30 @@
+<div class="content">
+<h1>Password Strength Calculator</h1>
+  <label>Enter Password<span [style.color]="'red'">* </span> :  </label>
+  <input type="password" (keyup)="scalc($event.target.value)">
+<br><br>
+<div class="indicator ">
+  <span class="very-weak"></span>
+  <span class="weak"></span>
+  <span class="medium"></span>
+  <span class="strong"></span>
+  <span class="very-strong"></span>
+</div>
+
+<p>{{remarks}}</p>
+
+<br><br>
+  <p>No. of Characters is : {{n}}</p>
+  <p>No. of Uppercase Characters is : {{lenu}}</p>
+  <p>No. of LowerCase Characters is : {{lenl}}</p>
+  <p>No. of Numeric Characters is : {{num}}</p>
+  <p>No. of Symbolic Characters is : {{sc}}</p>
+  <p>No. of Repeating Number Characters is : {{nr}}</p>
+  <p>No. of Upper Case Characters is : {{ucr}}</p>
+  <p>No. of Lower Case Characters is : {{lcr}}</p>
+  <p>No. of Sequential Letter Characters is : {{sl}}</p>
+  <p>No. of Sequential Number Characters is : {{sn}}</p>
+  <p>No. of Sequential Symbol Characters is : {{ss}}</p>
+
+  <p>Your Password Score is : {{score}}</p>
+</div>
